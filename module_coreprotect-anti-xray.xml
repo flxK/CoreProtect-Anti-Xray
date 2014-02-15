@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_coreprotect-anti-xray" default="compile.module.coreprotect-anti-xray">
+  <dirname property="module.coreprotect-anti-xray.basedir" file="${ant.file.module_coreprotect-anti-xray}"/>
+  
+  <property name="module.jdk.home.coreprotect-anti-xray" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.coreprotect-anti-xray" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.coreprotect-anti-xray" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.coreprotect-anti-xray" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="coreprotect-anti-xray.output.dir" value="${module.coreprotect-anti-xray.basedir}/out/production/CoreProtect-Anti-Xray"/>
+  <property name="coreprotect-anti-xray.testoutput.dir" value="${module.coreprotect-anti-xray.basedir}/out/test/CoreProtect-Anti-Xray"/>
+  
+  <path id="coreprotect-anti-xray.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="coreprotect-anti-xray.module.production.classpath">
+    <path refid="${module.jdk.classpath.coreprotect-anti-xray}"/>
+    <path refid="library.bukkit-lib.classpath"/>
+  </path>
+  
+  <path id="coreprotect-anti-xray.runtime.production.module.classpath">
+    <pathelement location="${coreprotect-anti-xray.output.dir}"/>
+    <path refid="library.bukkit-lib.classpath"/>
+  </path>
+  
+  <path id="coreprotect-anti-xray.module.classpath">
+    <path refid="${module.jdk.classpath.coreprotect-anti-xray}"/>
+    <pathelement location="${coreprotect-anti-xray.output.dir}"/>
+    <path refid="library.bukkit-lib.classpath"/>
+  </path>
+  
+  <path id="coreprotect-anti-xray.runtime.module.classpath">
+    <pathelement location="${coreprotect-anti-xray.testoutput.dir}"/>
+    <pathelement location="${coreprotect-anti-xray.output.dir}"/>
+    <path refid="library.bukkit-lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.coreprotect-anti-xray">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.coreprotect-anti-xray">
+    <patternset refid="excluded.from.module.coreprotect-anti-xray"/>
+  </patternset>
+  
+  <path id="coreprotect-anti-xray.module.sourcepath">
+    <dirset dir="${module.coreprotect-anti-xray.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.coreprotect-anti-xray" depends="compile.module.coreprotect-anti-xray.production,compile.module.coreprotect-anti-xray.tests" description="Compile module CoreProtect-Anti-Xray"/>
+  
+  <target name="compile.module.coreprotect-anti-xray.production" depends="register.custom.compilers" description="Compile module CoreProtect-Anti-Xray; production classes">
+    <mkdir dir="${coreprotect-anti-xray.output.dir}"/>
+    <javac2 destdir="${coreprotect-anti-xray.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.coreprotect-anti-xray}/javac">
+      <compilerarg line="${compiler.args.coreprotect-anti-xray}"/>
+      <bootclasspath refid="coreprotect-anti-xray.module.bootclasspath"/>
+      <classpath refid="coreprotect-anti-xray.module.production.classpath"/>
+      <src refid="coreprotect-anti-xray.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.coreprotect-anti-xray"/>
+    </javac2>
+    
+    <copy todir="${coreprotect-anti-xray.output.dir}">
+      <fileset dir="${module.coreprotect-anti-xray.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.coreprotect-anti-xray.tests" depends="register.custom.compilers,compile.module.coreprotect-anti-xray.production" description="compile module CoreProtect-Anti-Xray; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.coreprotect-anti-xray" description="cleanup module">
+    <delete dir="${coreprotect-anti-xray.output.dir}"/>
+    <delete dir="${coreprotect-anti-xray.testoutput.dir}"/>
+  </target>
+</project>

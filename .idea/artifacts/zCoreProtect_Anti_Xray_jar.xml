@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="zCoreProtect-Anti-Xray:jar">
+    <output-path>$USER_HOME$/bukkitprog/serverprog/plugins</output-path>
+    <root id="archive" name="CoreProtect-Anti-Xray.jar">
+      <element id="module-output" name="CoreProtect-Anti-Xray" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
