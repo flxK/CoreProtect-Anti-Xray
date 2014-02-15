@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efe5955a-227b-4bea-8759-007d84525868" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CoreProtect-Anti-Xray.iws" />
@@ -602,7 +601,7 @@
       <workItem from="1392393793059" duration="19295000" />
       <workItem from="1392477407974" duration="1586000" />
       <workItem from="1392479446388" duration="304000" />
-      <workItem from="1392480482733" duration="376000" />
+      <workItem from="1392480482733" duration="453000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1392480610110</created>
@@ -616,11 +615,15 @@
       <created>1392480695420</created>
       <updated>1392480695420</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update&#10;">
+      <created>1392480865345</created>
+      <updated>1392480865345</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21561000" />
+    <option name="totallyTimeSpent" value="21638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="956" y="0" width="964" height="1055" extended-state="0" />
