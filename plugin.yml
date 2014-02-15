@@ -6,4 +6,4 @@ depends: [CoreProtect]
 description: Anti Xray Plugin
 commands:
   xlu:
-    usage: /xlu <name> <sekunden>
+    usage: /xlu <name> <hours>
