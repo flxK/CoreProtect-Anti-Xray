@@ -17,9 +17,19 @@ import static java.util.Arrays.asList;
 
 public class AntiXray extends JavaPlugin {
 
+
+    @Override
+    public void onEnable(){
+        Plugin CP = getServer().getPluginManager().getPlugin("CoreProtect");
+        if(CP==null){
+            System.out.println("[CP-Anti-Xray] Failed to hook CoreProtect!");
+            getServer().getPluginManager().disablePlugin(this);
+        }
+        else System.out.println("[CP-Anti-Xray] CoreProtect hooked!");
+    }
+
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
-
         if(label.equalsIgnoreCase("xlu")){
             if(args.length!=2) return false;
             CoreProtectAPI CPApi = getCoreProtect();

@@ -84,7 +84,7 @@
       <file leaf-file-name="AntiXray.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.6553398" vertical-offset="0" max-vertical-offset="1950">
+            <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.048543688" vertical-offset="0" max-vertical-offset="2100">
               <folding />
             </state>
           </provider>
@@ -511,7 +511,7 @@
       <workItem from="1392480482733" duration="511000" />
       <workItem from="1392498718206" duration="112000" />
       <workItem from="1392511612948" duration="128000" />
-      <workItem from="1392512768960" duration="4024000" />
+      <workItem from="1392512768960" duration="4660000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1392480610110</created>
@@ -541,11 +541,15 @@
       <created>1392515682922</created>
       <updated>1392515682922</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated messages and Lists&#10;">
+      <created>1392516801983</created>
+      <updated>1392516801983</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25960000" />
+    <option name="totallyTimeSpent" value="26596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1924" height="1057" extended-state="6" />
@@ -594,7 +598,8 @@
     <MESSAGE value="Initial commit&#10;" />
     <MESSAGE value="update&#10;" />
     <MESSAGE value="Updated messages and Lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated messages and Lists" />
+    <MESSAGE value="Updated messages and Lists&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated messages and Lists&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -658,7 +663,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.6553398" vertical-offset="0" max-vertical-offset="1950">
+        <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.048543688" vertical-offset="0" max-vertical-offset="2100">
           <folding />
         </state>
       </provider>
