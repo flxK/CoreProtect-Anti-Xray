@@ -67,17 +67,22 @@ public class AntiXray extends JavaPlugin {
 
                 }
                 int summe = Stone+Diamonds+Gold+Iron+Coal+Lapis+Emerald+Redstone;
-                sender.sendMessage(ChatColor.YELLOW+"----------CP Anti-Xray----------");
+                sender.sendMessage(ChatColor.DARK_PURPLE+"--------------------------------");
+                sender.sendMessage(ChatColor.YELLOW+"          CP Anti-Xray");
+                sender.sendMessage(ChatColor.YELLOW+"--------------------------------");
+                sender.sendMessage(ChatColor.BLUE+"Blocks destroyed by "+ args[0]+":");
+                sender.sendMessage(ChatColor.YELLOW+"--------------------------------");
                 sender.sendMessage("Total: "+GesamtAbgebaut);
                 sender.sendMessage("Total (Below listed materials): " + summe);
                 sender.sendMessage(messageString(ChatColor.GREEN, "Emeralds", Emerald, summe));
                 sender.sendMessage(messageString(ChatColor.AQUA,        "Diamonds",     Diamonds, summe));
-                sender.sendMessage(messageString(ChatColor.YELLOW,      "Gold",         Gold, summe));
+                sender.sendMessage(messageString(ChatColor.GOLD,      "Gold",         Gold, summe));
                 sender.sendMessage(messageString(ChatColor.DARK_GRAY,   "Iron",         Iron, summe));
                 sender.sendMessage(messageString(ChatColor.RED,         "Redstone",     Redstone, summe));
                 sender.sendMessage(messageString(ChatColor.DARK_BLUE,   "Lapis Lazuli", Lapis, summe));
                 sender.sendMessage(messageString(ChatColor.BLACK,       "Coal",         Coal, summe));
                 sender.sendMessage(messageString(ChatColor.GRAY,        "Stone",        Stone, summe));
+                sender.sendMessage(ChatColor.DARK_PURPLE+"--------------------------------");
                  return true;
             }
         }

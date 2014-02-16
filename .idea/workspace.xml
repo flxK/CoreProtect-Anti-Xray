@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efe5955a-227b-4bea-8759-007d84525868" name="Default" comment="">
+    <list default="true" id="efe5955a-227b-4bea-8759-007d84525868" name="Default" comment="Chat formatting">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java" afterPath="$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,8 +84,10 @@
       <file leaf-file-name="AntiXray.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="79" selection-start="2887" selection-end="2887" vertical-scroll-proportion="0.2669903" vertical-offset="720" max-vertical-offset="2085">
-              <folding />
+            <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.048543688" vertical-offset="0" max-vertical-offset="2340">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -511,7 +513,7 @@
       <workItem from="1392480482733" duration="511000" />
       <workItem from="1392498718206" duration="112000" />
       <workItem from="1392511612948" duration="128000" />
-      <workItem from="1392512768960" duration="5043000" />
+      <workItem from="1392512768960" duration="5941000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1392480610110</created>
@@ -549,11 +551,15 @@
       <created>1392517455756</created>
       <updated>1392517455756</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="number of blocks totally destroyed&#10;">
+      <created>1392517838650</created>
+      <updated>1392517838650</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26979000" />
+    <option name="totallyTimeSpent" value="27877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1924" height="1057" extended-state="6" />
@@ -572,14 +578,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13660063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -604,7 +610,9 @@
     <MESSAGE value="Updated messages and Lists" />
     <MESSAGE value="Updated messages and Lists&#10;" />
     <MESSAGE value="Added check if CP is aviable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added check if CP is aviable" />
+    <MESSAGE value="number of blocks totally destroyed&#10;" />
+    <MESSAGE value="Chat formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chat formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -668,8 +676,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="79" selection-start="2887" selection-end="2887" vertical-scroll-proportion="0.2669903" vertical-offset="720" max-vertical-offset="2085">
-          <folding />
+        <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.048543688" vertical-offset="0" max-vertical-offset="2340">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
