@@ -29,9 +29,6 @@ public class AntiXray extends JavaPlugin {
             }
             else {
                 List<Integer> ids = asList(1, 14, 15, 16, 21, 56, 73, 74, 129);
-
-                List<String[]> lookup = CPApi.performLookup(args[0], Integer.parseInt(args[1])*86400, 0, null, ids, null);
-
                 int Diamonds = 0;
                 int Iron = 0;
                 int Gold = 0;
@@ -40,6 +37,9 @@ public class AntiXray extends JavaPlugin {
                 int Emerald = 0;
                 int Stone = 0;
                 int Lapis = 0;
+
+
+                List<String[]> lookup = CPApi.performLookup(args[0], Integer.parseInt(args[1])*86400, 0, null, ids, null);
                 for (String[] value : lookup){
                     ParseResult result = CPApi.parseResult(value);
                     if(result.getActionId()==0)
