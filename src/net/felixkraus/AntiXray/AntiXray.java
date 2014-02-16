@@ -22,10 +22,10 @@ public class AntiXray extends JavaPlugin {
     public void onEnable(){
         Plugin CP = getServer().getPluginManager().getPlugin("CoreProtect");
         if(CP==null){
-            System.out.println("[CP-Anti-Xray] Failed to hook CoreProtect!");
+            System.out.println("[CoreProtect-Anti-Xray] Failed to hook CoreProtect!");
             getServer().getPluginManager().disablePlugin(this);
         }
-        else System.out.println("[CP-Anti-Xray] CoreProtect hooked!");
+        else System.out.println("[CoreProtect-Anti-Xray] CoreProtect hooked!");
     }
 
     @Override

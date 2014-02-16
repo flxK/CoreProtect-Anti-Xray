@@ -1,4 +1,4 @@
-name: Anti-Xray
+name: CoreProtect-Anti-Xray
 main: net.felixkraus.AntiXray.AntiXray
 version: 0.1
 authors: [xilefkfelix]
@@ -7,3 +7,4 @@ description: Anti Xray Plugin
 commands:
   xlu:
     usage: /xlu <name> <hours>
+    permission: cpantixray.use
