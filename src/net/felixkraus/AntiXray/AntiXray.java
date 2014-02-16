@@ -48,7 +48,7 @@ public class AntiXray extends JavaPlugin {
                 int Stone = 0;
                 int Lapis = 0;
 
-
+                int GesamtAbgebaut = CPApi.performLookup(args[0], Integer.parseInt(args[1])*86400, 0, null, null, null ).size();
                 List<String[]> lookup = CPApi.performLookup(args[0], Integer.parseInt(args[1])*86400, 0, null, ids, null);
                 for (String[] value : lookup){
                     ParseResult result = CPApi.parseResult(value);
@@ -68,9 +68,9 @@ public class AntiXray extends JavaPlugin {
                 }
                 int summe = Stone+Diamonds+Gold+Iron+Coal+Lapis+Emerald+Redstone;
                 sender.sendMessage(ChatColor.YELLOW+"----------CP Anti-Xray----------");
-                sender.sendMessage("Total: "+summe);
-
-                sender.sendMessage(messageString(ChatColor.GREEN,       "Emeralds",     Emerald, summe));
+                sender.sendMessage("Total: "+GesamtAbgebaut);
+                sender.sendMessage("Total (Below listed materials): " + summe);
+                sender.sendMessage(messageString(ChatColor.GREEN, "Emeralds", Emerald, summe));
                 sender.sendMessage(messageString(ChatColor.AQUA,        "Diamonds",     Diamonds, summe));
                 sender.sendMessage(messageString(ChatColor.YELLOW,      "Gold",         Gold, summe));
                 sender.sendMessage(messageString(ChatColor.DARK_GRAY,   "Iron",         Iron, summe));
@@ -78,8 +78,7 @@ public class AntiXray extends JavaPlugin {
                 sender.sendMessage(messageString(ChatColor.DARK_BLUE,   "Lapis Lazuli", Lapis, summe));
                 sender.sendMessage(messageString(ChatColor.BLACK,       "Coal",         Coal, summe));
                 sender.sendMessage(messageString(ChatColor.GRAY,        "Stone",        Stone, summe));
-
-                return true;
+                 return true;
             }
         }
 
