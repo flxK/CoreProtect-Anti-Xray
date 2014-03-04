@@ -93,6 +93,7 @@ public class AntiXray extends JavaPlugin {
 
 
 
+
     private static boolean isInteger(String str) {
         if (str == null) {
             return false;

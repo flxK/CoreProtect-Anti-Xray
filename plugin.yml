@@ -1,6 +1,6 @@
 name: CoreProtect-Anti-Xray
 main: net.felixkraus.AntiXray.AntiXray
-version: 1.0
+version: 1.2
 authors: [xilefkfelix]
 depends: [CoreProtect]
 description: Anti Xray Plugin
