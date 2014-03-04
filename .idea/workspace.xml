@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="efe5955a-227b-4bea-8759-007d84525868" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java" afterPath="$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.yml" afterPath="$PROJECT_DIR$/plugin.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CoreProtect-Anti-Xray.iws" />
@@ -76,7 +75,7 @@
       <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -85,7 +84,7 @@
       <file leaf-file-name="AntiXray.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="4260" selection-end="4260" vertical-scroll-proportion="1.3177874" vertical-offset="180" max-vertical-offset="2355">
+            <state line="41" column="112" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.27272728" vertical-offset="360" max-vertical-offset="2250">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,7 +117,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-2" />
-    <option name="width" value="964" />
+    <option name="width" value="1924" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -187,8 +186,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,7 +521,8 @@
       <workItem from="1393531902802" duration="34000" />
       <workItem from="1393535207450" duration="614000" />
       <workItem from="1393592587672" duration="610000" />
-      <workItem from="1393921604999" duration="2038000" />
+      <workItem from="1393921604999" duration="2287000" />
+      <workItem from="1393954925694" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1392480610110</created>
@@ -584,15 +584,19 @@
       <created>1392563127321</created>
       <updated>1392563127321</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="+">
+      <created>1393923666843</created>
+      <updated>1393923666843</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35519000" />
+    <option name="totallyTimeSpent" value="35904000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="964" height="1057" extended-state="0" />
-    <editor active="false" />
+    <frame x="-2" y="0" width="1924" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -607,18 +611,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27244258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13607925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -645,7 +649,8 @@
     <MESSAGE value="Name change&#10;" />
     <MESSAGE value="fix in the plugin.yml" />
     <MESSAGE value="changing version id&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing version id&#10;" />
+    <MESSAGE value="+" />
+    <option name="LAST_COMMIT_MESSAGE" value="+" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -655,6 +660,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="29" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="2355">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="7" selection-start="110" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="225">
@@ -821,7 +842,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="4260" selection-end="4260" vertical-scroll-proportion="1.3177874" vertical-offset="180" max-vertical-offset="2355">
+        <state line="41" column="112" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.27272728" vertical-offset="360" max-vertical-offset="2250">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

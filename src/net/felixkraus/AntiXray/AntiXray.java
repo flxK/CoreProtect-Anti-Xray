@@ -39,14 +39,7 @@ public class AntiXray extends JavaPlugin {
             }
             else {
                 List<Integer> ids = asList(1, 14, 15, 16, 21, 56, 73, 74, 129);
-                int Diamonds = 0;
-                int Iron = 0;
-                int Gold = 0;
-                int Redstone = 0;
-                int Coal = 0;
-                int Emerald = 0;
-                int Stone = 0;
-                int Lapis = 0;
+                int Diamonds = 0, Iron = 0, Gold = 0, Redstone = 0, Coal = 0, Emerald = 0, Stone = 0, Lapis = 0;
 
                 int GesamtAbgebaut = CPApi.performLookup(args[0], Integer.parseInt(args[1])*86400, 0, null, null, null ).size();
                 List<String[]> lookup = CPApi.performLookup(args[0], Integer.parseInt(args[1])*86400, 0, null, ids, null);
