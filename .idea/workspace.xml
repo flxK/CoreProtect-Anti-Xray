@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="efe5955a-227b-4bea-8759-007d84525868" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java" afterPath="$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.yml" afterPath="$PROJECT_DIR$/plugin.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CoreProtect-Anti-Xray.iws" />
@@ -72,20 +73,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="plugin.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225">
+            <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.03208556" vertical-offset="0" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AntiXray.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AntiXray.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="112" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.27272728" vertical-offset="360" max-vertical-offset="2250">
+            <state line="28" column="9" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2355">
               <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetricsLite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mcstats/MetricsLite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="512" column="1" selection-start="17391" selection-end="17391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7770">
+              <folding>
+                <element signature="e#0#17391#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -110,8 +123,10 @@
         <option value="$PROJECT_DIR$/src/net/felixkraus/AntiXray/CoreProtectApi.java" />
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/src/net/felixkraus/AntiXray/Lookup.java" />
-        <option value="$PROJECT_DIR$/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/net/felixkraus/AntiXray/Metrics/java.java" />
+        <option value="$PROJECT_DIR$/src/org/mcstats/MetricsLite.java" />
         <option value="$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java" />
+        <option value="$PROJECT_DIR$/plugin.yml" />
       </list>
     </option>
   </component>
@@ -148,6 +163,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -180,14 +197,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="mcstats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreProtect-Anti-Xray" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreProtect-Anti-Xray" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="AntiXray" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,7 +555,8 @@
       <workItem from="1393535207450" duration="614000" />
       <workItem from="1393592587672" duration="610000" />
       <workItem from="1393921604999" duration="2287000" />
-      <workItem from="1393954925694" duration="136000" />
+      <workItem from="1393954925694" duration="375000" />
+      <workItem from="1395531839280" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1392480610110</created>
@@ -588,11 +622,15 @@
       <created>1393923666843</created>
       <updated>1393923666843</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="code formatting">
+      <created>1393955077780</created>
+      <updated>1393955077780</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35904000" />
+    <option name="totallyTimeSpent" value="36445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1924" height="1057" extended-state="6" />
@@ -611,18 +649,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13607925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1548488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -650,7 +688,8 @@
     <MESSAGE value="fix in the plugin.yml" />
     <MESSAGE value="changing version id&#10;" />
     <MESSAGE value="+" />
-    <option name="LAST_COMMIT_MESSAGE" value="+" />
+    <MESSAGE value="code formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="code formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -660,6 +699,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="105" selection-start="1490" selection-end="1596" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="2250">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225">
@@ -833,19 +888,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/felixkraus/AntiXray/AntiXray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="112" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.27272728" vertical-offset="360" max-vertical-offset="2250">
+        <state line="28" column="9" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2355">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mcstats/MetricsLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="512" column="1" selection-start="17391" selection-end="17391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7770">
+          <folding>
+            <element signature="e#0#17391#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.03208556" vertical-offset="0" max-vertical-offset="935">
+          <folding />
         </state>
       </provider>
     </entry>
