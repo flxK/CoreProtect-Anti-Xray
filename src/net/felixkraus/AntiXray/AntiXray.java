@@ -1,6 +1,5 @@
 package net.felixkraus.AntiXray;
 
-import net.coreprotect.Metrics;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -9,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import net.coreprotect.CoreProtect;
 import net.coreprotect.CoreProtectAPI;
 import net.coreprotect.CoreProtectAPI.*;
+import org.mcstats.MetricsLite;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -22,11 +22,15 @@ public class AntiXray extends JavaPlugin {
 
     @Override
     public void onEnable(){
-        try {
-            Metrics metrics = new Metrics(this);
-            metrics.start();
-        } catch (IOException e) {
+        saveDefaultConfig();
+        if(getConfig().getBoolean("useMetrics")){
+            try {
+                MetricsLite metrics = new MetricsLite(this);
+                metrics.start();
+            } catch (IOException e) {
+            }
         }
+
         Plugin CP = getServer().getPluginManager().getPlugin("CoreProtect");
         if(CP==null){
             System.out.println("[CoreProtect-Anti-Xray] Failed to hook CoreProtect!");

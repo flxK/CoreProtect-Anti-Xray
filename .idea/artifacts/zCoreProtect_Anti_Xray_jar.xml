@@ -4,6 +4,7 @@
     <root id="archive" name="CoreProtect-Anti-Xray.jar">
       <element id="module-output" name="CoreProtect-Anti-Xray" />
       <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
     </root>
   </artifact>
 </component>
