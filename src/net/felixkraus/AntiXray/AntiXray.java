@@ -19,6 +19,7 @@ import net.coreprotect.CoreProtectAPI;
 import net.coreprotect.CoreProtectAPI.ParseResult;
 
 public class AntiXray extends JavaPlugin {
+    private static boolean lookupInProgress = false;
 
     @Override
     public void onEnable() {
@@ -52,61 +53,82 @@ public class AntiXray extends JavaPlugin {
                 sender.sendMessage("Please give a valid integer for the time span.");
                 return false;
             }
+            else if (lookupInProgress) {
+                sender.sendMessage("An Anti-Xray lookup is already being processed.");
+                return false;
+            }
             else {
-                List<Object> ids = asList(Material.STONE, Material.GOLD_ORE, Material.IRON_ORE, Material.COAL_ORE, Material.LAPIS_ORE, Material.DIAMOND_ORE, Material.REDSTONE_ORE, Material.EMERALD_ORE);
-                int Diamonds = 0, Iron = 0, Gold = 0, Redstone = 0, Coal = 0, Emerald = 0, Stone = 0, Lapis = 0;
+                lookupInProgress = true;
+                class XrayLookup implements Runnable {
+                    @Override
+                    public void run() {
+                        try {
+                            List<Object> ids = asList(Material.STONE, Material.GOLD_ORE, Material.IRON_ORE, Material.COAL_ORE, Material.LAPIS_ORE, Material.DIAMOND_ORE, Material.REDSTONE_ORE, Material.EMERALD_ORE);
+                            int Diamonds = 0, Iron = 0, Gold = 0, Redstone = 0, Coal = 0, Emerald = 0, Stone = 0,
+                                    Lapis = 0;
 
-                int GesamtAbgebaut = CPApi.performLookup(Integer.parseInt(args[1]) * 86400, Arrays.asList(args[0]), null, null, null, null, 0, null).size();
-                List<String[]> lookup = CPApi.performLookup(Integer.parseInt(args[1]) * 86400, Arrays.asList(args[0]), null, ids, null, Arrays.asList(0), 0, null);
-                for (String[] value : lookup) {
-                    ParseResult result = CPApi.parseResult(value);
-                    switch (result.getType()) {
-                        case STONE:
-                            Stone++;
-                            break;
-                        case GOLD_ORE:
-                            Gold++;
-                            break;
-                        case IRON_ORE:
-                            Iron++;
-                            break;
-                        case COAL_ORE:
-                            Coal++;
-                            break;
-                        case LAPIS_ORE:
-                            Lapis++;
-                            break;
-                        case DIAMOND_ORE:
-                            Diamonds++;
-                            break;
-                        case REDSTONE_ORE:
-                            Redstone++;
-                            break;
-                        case EMERALD_ORE:
-                            Emerald++;
-                            break;
-                        default:
-                            break;
+                            int GesamtAbgebaut = CPApi.performLookup(Integer.parseInt(args[1]) * 86400, Arrays.asList(args[0]), null, null, null, null, 0, null).size();
+                            List<String[]> lookup = CPApi.performLookup(Integer.parseInt(args[1]) * 86400, Arrays.asList(args[0]), null, ids, null, Arrays.asList(0), 0, null);
+                            for (String[] value : lookup) {
+                                ParseResult result = CPApi.parseResult(value);
+                                switch (result.getType()) {
+                                    case STONE:
+                                        Stone++;
+                                        break;
+                                    case GOLD_ORE:
+                                        Gold++;
+                                        break;
+                                    case IRON_ORE:
+                                        Iron++;
+                                        break;
+                                    case COAL_ORE:
+                                        Coal++;
+                                        break;
+                                    case LAPIS_ORE:
+                                        Lapis++;
+                                        break;
+                                    case DIAMOND_ORE:
+                                        Diamonds++;
+                                        break;
+                                    case REDSTONE_ORE:
+                                        Redstone++;
+                                        break;
+                                    case EMERALD_ORE:
+                                        Emerald++;
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }
+
+                            int summe = Stone + Diamonds + Gold + Iron + Coal + Lapis + Emerald + Redstone;
+                            sender.sendMessage(ChatColor.DARK_PURPLE + "--------------------------------");
+                            sender.sendMessage(ChatColor.YELLOW + "          CP Anti-Xray");
+                            sender.sendMessage(ChatColor.YELLOW + "--------------------------------");
+                            sender.sendMessage(ChatColor.BLUE + "Blocks destroyed by " + args[0] + ":");
+                            sender.sendMessage(ChatColor.YELLOW + "--------------------------------");
+                            sender.sendMessage("Total: " + GesamtAbgebaut);
+                            sender.sendMessage("Total (Below listed materials): " + summe);
+                            sender.sendMessage(messageString(ChatColor.GREEN, "Emeralds", Emerald, summe));
+                            sender.sendMessage(messageString(ChatColor.AQUA, "Diamonds", Diamonds, summe));
+                            sender.sendMessage(messageString(ChatColor.GOLD, "Gold", Gold, summe));
+                            sender.sendMessage(messageString(ChatColor.DARK_GRAY, "Iron", Iron, summe));
+                            sender.sendMessage(messageString(ChatColor.RED, "Redstone", Redstone, summe));
+                            sender.sendMessage(messageString(ChatColor.DARK_BLUE, "Lapis Lazuli", Lapis, summe));
+                            sender.sendMessage(messageString(ChatColor.BLACK, "Coal", Coal, summe));
+                            sender.sendMessage(messageString(ChatColor.GRAY, "Stone", Stone, summe));
+                            sender.sendMessage(ChatColor.DARK_PURPLE + "--------------------------------");
+
+                            lookupInProgress = false;
+                        }
+                        catch (Exception e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
+                Thread thread = new Thread(new XrayLookup());
+                thread.start();
 
-                int summe = Stone + Diamonds + Gold + Iron + Coal + Lapis + Emerald + Redstone;
-                sender.sendMessage(ChatColor.DARK_PURPLE + "--------------------------------");
-                sender.sendMessage(ChatColor.YELLOW + "          CP Anti-Xray");
-                sender.sendMessage(ChatColor.YELLOW + "--------------------------------");
-                sender.sendMessage(ChatColor.BLUE + "Blocks destroyed by " + args[0] + ":");
-                sender.sendMessage(ChatColor.YELLOW + "--------------------------------");
-                sender.sendMessage("Total: " + GesamtAbgebaut);
-                sender.sendMessage("Total (Below listed materials): " + summe);
-                sender.sendMessage(messageString(ChatColor.GREEN, "Emeralds", Emerald, summe));
-                sender.sendMessage(messageString(ChatColor.AQUA, "Diamonds", Diamonds, summe));
-                sender.sendMessage(messageString(ChatColor.GOLD, "Gold", Gold, summe));
-                sender.sendMessage(messageString(ChatColor.DARK_GRAY, "Iron", Iron, summe));
-                sender.sendMessage(messageString(ChatColor.RED, "Redstone", Redstone, summe));
-                sender.sendMessage(messageString(ChatColor.DARK_BLUE, "Lapis Lazuli", Lapis, summe));
-                sender.sendMessage(messageString(ChatColor.BLACK, "Coal", Coal, summe));
-                sender.sendMessage(messageString(ChatColor.GRAY, "Stone", Stone, summe));
-                sender.sendMessage(ChatColor.DARK_PURPLE + "--------------------------------");
                 return true;
             }
         }
