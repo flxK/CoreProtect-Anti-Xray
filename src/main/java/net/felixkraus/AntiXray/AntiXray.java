@@ -63,9 +63,9 @@ public class AntiXray extends JavaPlugin {
                     @Override
                     public void run() {
                         try {
-                            List<Object> ids = asList(Material.STONE, Material.GOLD_ORE, Material.IRON_ORE, Material.COAL_ORE, Material.LAPIS_ORE, Material.DIAMOND_ORE, Material.REDSTONE_ORE, Material.EMERALD_ORE);
+                            List<Object> ids = asList(Material.STONE, Material.GOLD_ORE, Material.IRON_ORE, Material.COAL_ORE, Material.LAPIS_ORE, Material.DIAMOND_ORE, Material.REDSTONE_ORE, Material.EMERALD_ORE, Material.ANCIENT_DEBRIS);
                             int Diamonds = 0, Iron = 0, Gold = 0, Redstone = 0, Coal = 0, Emerald = 0, Stone = 0,
-                                    Lapis = 0;
+                                    Lapis = 0, Ancient = 0;
 
                             int GesamtAbgebaut = CPApi.performLookup(Integer.parseInt(args[1]) * 86400, Arrays.asList(args[0]), null, null, null, null, 0, null).size();
                             List<String[]> lookup = CPApi.performLookup(Integer.parseInt(args[1]) * 86400, Arrays.asList(args[0]), null, ids, null, Arrays.asList(0), 0, null);
@@ -96,12 +96,14 @@ public class AntiXray extends JavaPlugin {
                                     case EMERALD_ORE:
                                         Emerald++;
                                         break;
+                                    case ANCIENT_DEBRIS:
+                                        Ancient++;
                                     default:
                                         break;
                                 }
                             }
 
-                            int summe = Stone + Diamonds + Gold + Iron + Coal + Lapis + Emerald + Redstone;
+                            int summe = Stone + Diamonds + Gold + Iron + Coal + Lapis + Emerald + Redstone + Ancient;
                             sender.sendMessage(ChatColor.DARK_PURPLE + "--------------------------------");
                             sender.sendMessage(ChatColor.YELLOW + "          CP Anti-Xray");
                             sender.sendMessage(ChatColor.YELLOW + "--------------------------------");
@@ -117,6 +119,7 @@ public class AntiXray extends JavaPlugin {
                             sender.sendMessage(messageString(ChatColor.DARK_BLUE, "Lapis Lazuli", Lapis, summe));
                             sender.sendMessage(messageString(ChatColor.BLACK, "Coal", Coal, summe));
                             sender.sendMessage(messageString(ChatColor.GRAY, "Stone", Stone, summe));
+                            sender.sendMessage(messageString(ChatColor.AQUA, "Ancient", Ancient, summe));
                             sender.sendMessage(ChatColor.DARK_PURPLE + "--------------------------------");
 
                             lookupInProgress = false;
