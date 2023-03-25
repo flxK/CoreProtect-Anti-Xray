@@ -2,6 +2,7 @@ name: CoreProtect-Anti-Xray
 main: net.felixkraus.AntiXray.AntiXray
 version: 1.4
 api-version: 1.13
+folia-supported: true
 authors: [xilefkfelix]
 depends: [CoreProtect]
 description: Anti Xray Plugin
